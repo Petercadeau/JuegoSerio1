@@ -11,7 +11,11 @@ public class ChangeScore : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Score.points += 1;
+            if(gameObject.tag == "Correct"){
+                Score.points += 1;
+            }else{
+                Score.points -= 1;
+            }
             textScore.text = Score.points.ToString();
             GetComponent<SpriteRenderer>().enabled = false;
             gameObject
