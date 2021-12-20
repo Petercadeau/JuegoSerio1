@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Skull/12140_Skull_v3_L2.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Skull/Skull.jpg" type="Texture" id=2]
+[ext_resource path="res://scriptJugador.gd" type="Script" id=3]
 
 [sub_resource type="Environment" id=1]
 ambient_light_color = Color( 1, 1, 1, 1 )
@@ -63,6 +64,7 @@ shape = SubResource( 4 )
 
 [node name="player" type="RigidBody" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.07557, 0.579197, -4.54551 )
+script = ExtResource( 3 )
 
 [node name="CSGBox" type="CSGBox" parent="player"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.900619, 0.620803, 0 )
@@ -76,7 +78,6 @@ shape = SubResource( 5 )
 transform = Transform( -0.0211518, 0, -0.999776, 0, 1, 0, 0.999776, 0, -0.0211518, -18.5516, 2.83991, -0.282141 )
 
 [node name="OmniLight" type="OmniLight" parent="Camera"]
-transform = Transform( 1, 0, 2.6077e-08, 0, 1, 0, -2.6077e-08, 0, 1, 5.3345, 1.91924, -17.3366 )
-light_color = Color( 0.956863, 0.286275, 0.819608, 1 )
+transform = Transform( 1, 0, 4.65661e-08, 0, 1, 0, -4.84288e-08, 0, 1, -7.91751, -1.11951, -9.97948 )
 light_energy = 2.0
 shadow_enabled = true
