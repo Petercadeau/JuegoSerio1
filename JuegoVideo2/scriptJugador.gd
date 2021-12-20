@@ -9,16 +9,17 @@ pass # Replace with function body.
 func _physics_process(delta):
 	var t= get_transform()
 	if Input.is_action_pressed("ui_right"):
-		t.origin.x += 10*delta
+		t.origin.x -= 10*delta
+		t.basis.rotated(Vector3(0,1,0),PI)
 		set_transform(t)
 	if Input.is_action_pressed("ui_left"):
-		t.origin.x -= 10*delta
+		t.origin.x += 10*delta
 		set_transform(t)
 	if Input.is_action_pressed("ui_up"):
-		t.origin.z -= 10*delta
+		t.origin.z += 10*delta
 		set_transform(t)
 	if Input.is_action_pressed("ui_down"):
-		t.origin.z += 10*delta
+		t.origin.z -= 10*delta
 		set_transform(t)
 
 func _input(event):
