@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BUS_ECOLINE.obj-19b768f6e654b9ce0266d18479fcb879.mesh"
+
+[deps]
+
+files=[ "res://.import/BUS_ECOLINE.obj-19b768f6e654b9ce0266d18479fcb879.mesh" ]
+
+source_file="res://Bus/BUS_ECOLINE.obj"
+dest_files=[ "res://.import/BUS_ECOLINE.obj-19b768f6e654b9ce0266d18479fcb879.mesh", "res://.import/BUS_ECOLINE.obj-19b768f6e654b9ce0266d18479fcb879.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -11,8 +11,9 @@ config_version=4
 [application]
 
 config/name="JuegoVideo2"
-run/main_scene="res://Main.tscn"
-config/icon="res://icon.png"
+run/main_scene="res://Menu.tscn"
+boot_splash/image="res://Backgound/backgrond_png.png"
+config/icon="res://Buttons/police-car-icon.png"
 
 [input]
 
